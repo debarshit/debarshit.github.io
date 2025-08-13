@@ -7,7 +7,7 @@ import pdfjsWorker from "pdfjs-dist/build/pdf.worker.mjs?worker&url";
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 const SCALE = 2;
-const PRELOAD_RANGE = 3; // Preload 3 pages ahead/behind
+const PRELOAD_RANGE = 2; // Preload 3 pages ahead/behind
 
 export default function PortfolioBook() {
   const [pageCount, setPageCount] = useState(0);
